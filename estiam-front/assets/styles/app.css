@@ -1,0 +1,80 @@
+/* Reset de quelques styles par défaut */
+body, h2, form, input, button, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5F5;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #4A90E2;
+}
+
+form > div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #7B7B7B;
+}
+
+input[type="email"], input[type="password"], input[type="username"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+input[type="email"]:focus, input[type="username"]:focus, input[type="password"]:focus, input[type="text"]:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+/* Unification du style pour <button>, <a>, .btn, et .btn-link */
+button, a, .btn, .btn-link {
+    display: inline-block;
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    padding: 10px 20px; /* Ajustement pour uniformiser la taille */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px; /* Assurez-vous que la taille de la police est uniforme */
+    box-sizing: border-box;
+}
+
+button:hover, a:hover, .btn:hover, .btn-link:hover {
+    background-color: #357ABD;
+}
+
+/* Style spécifique pour les liens normaux qui ne doivent pas ressembler à des boutons */
+a:not(.btn):not(.btn-link) {
+    background-color: transparent;
+    color: #4A90E2;
+    padding: 0; /* Réinitialisation du padding pour les liens normaux */
+}
+
+a:not(.btn):not(.btn-link):hover {
+    background-color: transparent;
+    color: #357ABD;
+    text-decoration: underline;
+}
